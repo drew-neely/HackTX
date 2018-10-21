@@ -21,16 +21,21 @@ const styles = {
 
  //<input style={styles.button} type="file" name="test" ref="fileUploader" onChange="this.handleFileChange"/>
 
+ function yay() {
+   console.log("yay");
+ }
+
 class App extends Component {
   render() {
     return (
       <div style={styles.wrapper}> 
-          <div class="upload-btn-wrapper">
-            <button class="btn">Upload a file</button>
-            <input type="file" name="myfile" />
+          <div className="upload-btn-wrapper">
+            <button className="btn">Upload a file</button>
+            <input type="file" name="myfile" onChange={yay} />
           </div>
+          {/* <input type="file" name="fileUploader" size="60" onChange={alert(123)}/> */}
           <div>
-          <div id ="loader" class="loader"></div>
+          <div id ="loader" className="loader"></div>
           <img src={test123} id="image"/>
           </div>
       </div>

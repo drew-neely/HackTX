@@ -7,6 +7,7 @@
     "@material/react-button": "^0.5.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-meta-tags": "^0.7.1",
     "react-scripts": "2.0.5"
   },
   "scripts": {
