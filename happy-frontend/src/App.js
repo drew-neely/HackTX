@@ -3,6 +3,13 @@ import logo from './logo.svg';
 import PropTypes from 'prop-types';
 //import Button from '@material/react-button/dist'; // /index.js is implied
 import './App.css';
+import test123 from './Hugging_Face_Emoji.png';
+
+const styles = {
+  button :{
+    width:70
+  }
+};
 
 class App extends Component {
   render() {
@@ -10,7 +17,9 @@ class App extends Component {
       <div>
         <style>{'body { background-color:#F0FFF0}'}</style>
           <input type="file" name="test" ref="fileUploader" onChange="this.handleFileChange"/>
-          <img src="Hugging_Face_Emoji.png"/>
+          <div>
+          <img src={test123}/>
+          </div>
       </div>
     );
   }
