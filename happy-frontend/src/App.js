@@ -6,19 +6,32 @@ import './App.css';
 import test123 from './Hugging_Face_Emoji.png';
 
 const styles = {
-  button :{
-    width:70
+  button : {
+    color: '#FF0000',
+
+  },
+  wrapper: {
+    textAlign:'center',
+    backgroundColor: '#F0FFF0',
+    width: 'device-width',
+    verticalAlign: 'center',
   }
-};
+
+ };
+
+ //<input style={styles.button} type="file" name="test" ref="fileUploader" onChange="this.handleFileChange"/>
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <style>{'body { background-color:#F0FFF0}'}</style>
-          <input type="file" name="test" ref="fileUploader" onChange="this.handleFileChange"/>
+      <div style={styles.wrapper}> 
+          <div class="upload-btn-wrapper">
+            <button class="btn">Upload a file</button>
+            <input type="file" name="myfile" />
+          </div>
           <div>
-          <img src={test123}/>
+          <div id ="loader" class="loader"></div>
+          <img src={test123} id="image"/>
           </div>
       </div>
     );
