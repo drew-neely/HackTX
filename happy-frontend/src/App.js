@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import PropTypes from 'prop-types';
 //import Button from '@material/react-button/dist'; // /index.js is implied
 import './App.css';
+import * as utils from './serverUtil';
 import test123 from './Hugging_Face_Emoji.png';
 
 const styles = {
@@ -28,7 +29,7 @@ const styles = {
 class App extends Component {
   render() {
     return (
-      <div style={styles.wrapper}> 
+      <div style={styles.wrapper}>
           <div className="upload-btn-wrapper">
             <button className="btn">Upload a file</button>
             <input type="file" name="myfile" onChange={yay} />

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <script>
+
+    </script>
+<head>
+<link rel ="stylesheet" href="./style.css">
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://www.promisejs.org/polyfills/promise-6.1.0.js"></script>
+<script src="https://cdn.rawgit.com/oliver-moran/jimp/v0.2.27/browser/lib/jimp.min.js"></script>
+<script src="./serverUtil.js"></script>
+<meta charset=utf-8 />
+<title>Happyfier</title>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+  article, aside, figure, footer, header, hgroup, 
+  menu, nav, section { display: block; }
+</style>
+</head>
+<body bgcolor="#F0FFF0">
+    <div class="wrapper">
+      <h1>Make your image happier with Happyfier</h1>
+      <h4>Let's turn that frown upside down.</h4>
+      <br><br>
+        <div class="upload-btn-wrapper">
+          <button class="btn">Upload a file</button>
+          <input type="file" name="myfile" onChange="fileGet()"/>
+        </div>
+        <div>
+        <div id ="loader" class="loader"></div>
+        <img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Hugging_Face_Emoji.png?9898922749706957214" id="image" style="height:400px;"/>
+        </div>
+    </div>
+</body>
+</html>
